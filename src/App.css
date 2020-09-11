@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Ubuntu+Condensed&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Mulish;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    background-color: #fff !important;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 8px 6px -6px #999;
+    z-index: 999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand{
+    font-size:1.9rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header{
+    height: 70vh;
+}
+
+#header .btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.header-image{
+    text-align: right;
+}
+
+#header .animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+/* Service */
+
+.ser_btn{
+    background: #ff9966;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 0;
+    border: 0;
+}
+
+.ser_btn:hover{
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.submit_btn{
+    background-color: #ff5e62;
+    color: #fff;
+    border-radius: 0;
+}
+
+.submit_btn:hover{
+    background-color: #ff9966;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Service End */
+
+@-webkit-keyframes up-down{
+    0%{
+        transform : translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down{
+    0%{
+        transform : translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
